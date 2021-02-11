@@ -1,6 +1,8 @@
-h1 {
-    text-shadow: 2px 2px #ff0000;
-    text-decoration: underline;
+h1,
+h2,
+h3,
+.font-one {
+    font-family: 'Jomhuria', cursive;
 }
 
 a {
