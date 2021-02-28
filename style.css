@@ -2,6 +2,10 @@
     font-family: 'Jomhuria', cursive;
 }
 
+.font-two {
+  font-family: 'Press Start 2P', cursive;
+}
+
 .underscore-class {
     text-decoration: underline;
     text-transform: capitalize;
@@ -47,6 +51,6 @@
 }  
 
 .nav-font {
-  font-family: 'Jomhuria', cursive;
+  font-family: 'Press Start 2P', cursive;
   font-size: 30px;
 }
