@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/qiridote/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style> body {text-align: center;}</style>
+<style id="jsbin-css">
+img[name=VCRImage]:hover
+{
+  cursor:pointer;
+}
+</style>
+</head>
+<body>
+  
+<br><br><br><br><br><br><br><br><br><br><br><br>   
+
+<IMG SRC="http://2.bp.blogspot.com/-8ChQ3SBxYOY/U9bSBt4bcMI/AAAAAAAARDE/zLDJ1kP903A/s1600/1.png" name="VCRImage" 
+
+     data-altsrc="http://2.bp.blogspot.com/-DNISePZjJ4g/U9bSB5NjEzI/AAAAAAAARCw/K7OGOPjQd0Q/s1600/2.png, http://4.bp.blogspot.com/-MoL1MHN12Eo/U9bSB6EIS-I/AAAAAAAARCs/gUSKbzsg05g/s1600/3.png"
+>
+
+  <IMG SRC="http://2.bp.blogspot.com/-8ChQ3SBxYOY/U9bSBt4bcMI/AAAAAAAARDE/zLDJ1kP903A/s1600/1.png" name="VCRImage" 
+
+     data-altsrc="http://www.fillmurray.com/100/100, http://www.fillmurray.com/100/110"
+>
+
+<p>hello! this is a practice/test javascript that will be a part of my final exercise. <br>
+    I am working on finishing the drawings I want to use in this exercise before
+    working further.
+</p>
+  
+<script id="jsbin-javascript">
+//Select all elements on the page with the name attribute equal to VCRImage
+var images = document.querySelectorAll('[name=VCRImage]');
+
+//For each image bind the click event
+for(var i=0; i < images.length; i++)
+{
+  var image = images[i];
+  //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener
+  image.addEventListener('click', imageClicked.call(image), false);
+}
+
+function imageClicked()
+{
+  //get images in the set
+  var imageSet = this.getAttribute('data-altsrc').split(',');
+  
+  //Use a closure to wrap the counter variable
+  //so each image element has their own unique counter
+  var counter = 0;
+  return function(event)
+  {
+    //Increment counter
+    counter++;
+    //The context of "this" is the image element
+    //Use a modulus
+    this.src = imageSet[counter % imageSet.length];
+  }
+}
+
+</script>
+</body>
+</html>
