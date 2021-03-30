@@ -12,20 +12,47 @@ img {
   .imgC1 {
       z-index: 3;
   }
+  .imgD1 {
+    z-index: 4;
+  }
+  .imgF1 {
+    z-index: 5;
+  }
 
 
 .center {
-    display: block;
+    position: absolute;
+    object-position: center;
+    top: 15%;
+    left: 30%;
     margin-left: auto;
     margin-right: auto;
     /* bring your own prefixes */
   }
 .center2 {
     position: absolute;
-    top: 56%;
-    left: 37.6%;
+    object-position: center;
+    top: 46%;
+    left: 37.5%;
     margin-left: auto;
     margin-right: auto;
     /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
+  }
+.center3 {
+    position: fixed;
+    object-position: center;
+    top: 55%;
+    left: 42%;
+    margin-left: auto;
+   margin-right: auto;
+   /* bring your own prefixes */
+  }
+.center4 {
+    position: fixed;
+    object-position: center;
+   top: 62%;
+    left: 39%;
+   margin-left: auto;
+   margin-right: auto;
+    /* bring your own prefixes */
+  }
