@@ -10,7 +10,7 @@ img {
     z-index: 2;
   }
   .imgC1 {
-      z-index: 3;
+    z-index: 3;
   }
   .imgD1 {
     z-index: 4;
@@ -24,7 +24,7 @@ img {
     position: fixed;
     object-position: center;
     top: 15%;
-    left: 30%;
+    left: 33%;
     margin-left: auto;
     margin-right: auto;
     /* bring your own prefixes */
@@ -33,7 +33,7 @@ img {
     position: fixed;
     object-position: center;
     top: 46%;
-    left: 37.5%;
+    left: 40.5%;
     margin-left: auto;
     margin-right: auto;
     /* bring your own prefixes */
@@ -42,7 +42,7 @@ img {
     position: fixed;
     object-position: center;
     top: 55%;
-    left: 42%;
+    left: 45%;
     margin-left: auto;
    margin-right: auto;
    /* bring your own prefixes */
@@ -50,9 +50,14 @@ img {
 .center4 {
     position: fixed;
     object-position: center;
-   top: 62%;
-    left: 39%;
+   top: 61%;
+    left: 42%;
    margin-left: auto;
    margin-right: auto;
     /* bring your own prefixes */
   }
+.titlefont {
+ font-family: 'Titan One';
+ font-size: 50px;
+ color: rgb(233, 152, 199);
+}
